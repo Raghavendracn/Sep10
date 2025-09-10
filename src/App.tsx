@@ -45,7 +45,7 @@ const App: React.FC = () => {
   const [todos, setTodos] = useState<TodoItem[]>([]);
   const [inputValue, setInputValue] = useState<string>('');
   const [counter, setCounter] = useState<number>(0);
-
+debugger;
   const addTodo = (): void => {
     if (inputValue.trim() !== '') {
       setTodos([...todos, { id: Date.now(), text: inputValue }]);
